@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Receipt</title>
+</head>
+
+
+
+<body>
+    
+    <!-- money-reciept css start  -->
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url(data:font/woff2;base64,<BASE64_ENCODED_FONT_DATA>) format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            src: url(data:font/woff2;base64,<BASE64_ENCODED_FONT_DATA>) format('woff2');
+            font-weight: 600;
+            font-style: normal;
+        }
+    
+        .money-reciept{
+            font-family: 'Poppins', sans-serif;
+            display: flex; justify-content: center;
+            overflow-x: auto;
+        }
+        @media (max-width: 992px) {
+            .money-reciept{
+            display: block;
+            }
+        }
+        .money-reciept .table{
+            width: 100%;
+            border-collapse: collapse; 
+            border-spacing: 0;
+        }
+        .money-reciept .barcode{
+            height: 52px;
+            width: auto;
+            object-fit: cover;
+        }
+        .money-reciept .text{
+            font-size: 14px;
+            font-weight: 400;
+            
+        }
+        .money-reciept p, h1, h2, h3, h4, h5, h6{
+            margin: 0 ;
+            color: #333;
+        }
+        .money-reciept .bg-dark{
+            background: #333;
+            color: white;
+        }
+        .money-reciept .bg-light{
+            background: #ddd;
+            color: #333;
+        }
+        .money-reciept .text-bold{
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .money-reciept .text-sm{
+            font-size: 12px;
+        }
+        .money-reciept .text-md{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .money-reciept .text-lg{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .money-reciept .text-start{
+            text-align: left;
+        }
+        .money-reciept .text-center{
+            text-align: center;
+        }
+        .money-reciept .text-end{
+            text-align: right;
+        }
+        .money-reciept .text-danger{
+            color: red;
+        }
+        .money-reciept .qr-code{
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+        }
+        .money-reciept .margin-top{
+            margin-top: 24px;
+        }
+        .money-reciept .border-bottom{
+            border-bottom: 1px solid #333;
+        }
+        .money-reciept .cell-border{
+            border: 1px solid #333;
+        }
+        .money-reciept .money-reciept-wrap{
+            position: relative;
+            width: 794px; height: 1123px; 
+            /* background: #f7f7f7; */
+             padding: 84px;
+        }
+        .money-reciept .footer .left{
+            position: absolute;
+            bottom: 84px;
+            left: 84px;
+        }
+        .money-reciept .footer .right{
+            position: absolute;
+            bottom: 84px;
+            right: 84px;
+        }
+    </style>
+
+    <div class="table-responsive money-reciept">
+        <div class="money-reciept-wrap" >
+            <table class="table " >
+                <thead>
+                    <tr>
+                        <td colspan="3" style="width: 470px;"><img src="img/logo.png" alt="" style="width: auto; height: 40px; object-fit: cover; margin-top: -26px;"></td>
+
+                        <td colspan="1">
+                            <h5 class="text-bold">The Imerial Irish Kingdom</h5>
+                            <p class="text">www.example.com</p>
+                            <p class="text">M-3, Lavel-2, Merul Badda, Gulshan, Dhaka</p>
+                            <p class="text">Helpline: <span class="text-bold">+880 1711 000  000</span></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" >
+                            <p class="text-sm" style=" margin-top: 58px;">Wednesday, 11 December, 2024</p>
+                            <img src="img/barcode.png"  class="barcode" alt="">
+                            <p class="text text-capitalize" style="margin-top: -8px;">INV2508029496245229</p>
+                        </td>
+                        <td colspan="1">
+                            <h5 class="text-bold text-capitalize bg-dark margin-top" style="padding-left: 10px; ">Classroom Bangladesh</h5>
+                            <p class="text-bold">Dutch Bangla Bank PLC</p>
+                            <p class="text"><span class="text-bold">Acc</span> # 19931000033161</p>
+                            <p class="text"><span class="text-bold">bKash Merchant </span># 01711 000 000</p>
+                            <p class="text"><span class="text-bold">Nagat Merchant </span># 01711 000 000</p>
+                            <p class="text"><span class="text-bold">Rocket Merchant </span># 01711 000 000</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <h2 class="text-md margin-top">Money Acknowledgement Receipt</h2>
+                            <div style="display: flex;">
+                                <div>
+                                    <p class="text"><span style="width: 90px; display: inline-block;">Student ID</span>: 26400</p>
+                                    <p class="text"><span style="width: 90px; display: inline-block;">Contact No</span>: 01711 000 000</p>
+                                </div>
+                                <div style="margin-left: 48px;">
+                                    <p class="text"><span style="width: 110px; display: inline-block;">Student Name</span>: Mr Rahman</p>
+                                    <p class="text"><span style="width: 110px; display: inline-block;">Email address</span>: hello@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <table class="table margin-top">
+                <thead>
+                    <tr class=" ">
+                        <th class="text-bold text-start border-bottom margin-top">Course Name</th>
+                        <th class="text-bold text-end border-bottom margin-top">Fee</th>
+                        <th class="text-bold text-end border-bottom margin-top">Discount</th>
+                        <th class="text-bold text-end border-bottom margin-top">Payable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text">Digital Marketing</td>
+                        <td class="text text-end">40,000 BDT</td>
+                        <td class="text text-end">20,000 BDT</td>
+                        <td class="text text-end ">20,000 BDT</td>
+                    </tr>
+                    <tr>
+                        <td class="text">Graphics Design</td>
+                        <td class="text text-end">40,000 BDT</td>
+                        <td class="text text-end ">20,000 BDT</td>
+                        <td class="text text-end border-bottom">20,000 BDT</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" class="text-bold text-end">Total</td>
+                        <td class="text-bold text-end ">40,000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-bold text-end">Admission Fee</td>
+                        <td class="text-bold text-end border-bottom">200</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-bold text-end">Grand Total</td>
+                        <td class="text-bold text-end ">40,200</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+
+            <table class="table margin-top">
+                <thead class="">
+                    <tr>
+                        <th class="text-bold border-bottom bg-dark">Payment History</th>
+                        <th class="text-bold text-end border-bottom">Paid By</th>
+                        <th class="text-bold text-end border-bottom">Transaction ID</th>
+                        <th class="text-bold text-end border-bottom">Paid Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="text">Wednesday, 11 December, 2024</td>
+                        <td class="text text-end">Cash</td>
+                        <td class="text text-end">608</td>
+                        <td class="text text-end">7,000 BDT</td>
+                    </tr>
+                    <tr>
+                        <td class="text">Wednesday, 11 December, 2024</td>
+                        <td class="text text-end">bKash</td>
+                        <td class="text text-end">608</td>
+                        <td class="text text-end">7,000 BDT</td>
+                    </tr>
+                    <tr>
+                        <td class="text">Wednesday, 11 December, 2024</td>
+                        <td class="text text-end">Nagat</td>
+                        <td class="text text-end">608</td>
+                        <td class="text text-end">7,000 BDT</td>
+                    </tr>
+                    <tr>
+                        <td class="text">Wednesday, 11 December, 2024</td>
+                        <td class="text text-end">DBBL</td>
+                        <td class="text text-end">608</td>
+                        <td class="text text-end">7,000 BDT</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table margin-top">
+                <thead>
+                    <tr>
+                        <th class="text-bold text-center bg-dark cell-border">Payable Amount</th>
+                        <th class="text-bold text-center bg-dark cell-border">Paid Amount</th>
+                        <th class="text-bold text-center bg-dark cell-border">Due Amount</th>
+                    </tr>
+                    <tr>
+                        <td class="text-md text-center cell-border">40,000 BDT</td>
+                        <td class="text-md text-center bg-light cell-border">20,000 BDT</td>
+                        <td class="text-md text-center text-danger cell-border">20,200 BDT</td>
+                    </tr>
+                </thead>
+            </table>
+
+            <p class="text" style="margin-top: 16px;">Dear, Mr. Rahaman. Your admission has not been confirmed yet. Please, pay your dues. Best of luck. <br>
+                Congratulations, Mr. Rahman! Your admission has been confirmed.</p>
+
+
+            <p class="text-bold margin-top text-center">Please, knock to whats App for any help</p>
+            <h2 class="text-center text-lg text-danger">01711 000 000</h2>
+
+            <div class="margin-top footer">
+                <p class="text-sm left">Wednesday, 11 December, 2024 <span style="margin-left: 16px;">09:45 PM</span></p>
+                <div class="right text-end">
+                    <img src="img/qr-code.png" alt="" class="qr-code">
+                    <p class="text">Authorized by-</p>
+                    <p class="text-bold">Classroom Bangladesh</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Info</title>
+</head>
+
+
+
+<body>
+    
+    <!-- shipping-info css start  -->
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url(data:font/woff2;base64,<BASE64_ENCODED_FONT_DATA>) format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            src: url(data:font/woff2;base64,<BASE64_ENCODED_FONT_DATA>) format('woff2');
+            font-weight: 600;
+            font-style: normal;
+        }
+    
+        .shipping-info{
+            font-family: 'Poppins', sans-serif;
+            display: flex; justify-content: center;
+            /* width: 100%; */
+            overflow-x: auto;
+        }
+
+        @media (max-width: 992px) {
+            .shipping-info{
+            display: block;
+            }
+        }
+        .shipping-info .table{
+            width: 100%;
+            border-collapse: collapse; 
+            border-spacing: 0;
+        }
+        .shipping-info .table td, .shipping-info .table th{
+            border: 1px solid #333;
+            padding: 4px;
+        }
+        .shipping-info .barcode{
+            height: 52px;
+            width: auto;
+            object-fit: cover;
+        }
+        .shipping-info .text{
+            font-size: 14px;
+            font-weight: 400;
+            
+        }
+        .shipping-info p, h1, h2, h3, h4, h5, h6{
+            margin: 0 ;
+            color: #333;
+        }
+        .shipping-info .bg-dark{
+            background: #333;
+            color: white;
+        }
+        .shipping-info .bg-light{
+            background: #ddd;
+            color: #333;
+        }
+        .shipping-info .text-bold{
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .shipping-info .text-sm{
+            font-size: 12px;
+        }
+        .shipping-info .text-md{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .shipping-info .text-lg{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .shipping-info .text-start{
+            text-align: left;
+        }
+        .shipping-info .text-center{
+            text-align: center;
+        }
+        .shipping-info .text-end{
+            text-align: right;
+        }
+        .shipping-info .text-danger{
+            color: red;
+        }
+        .shipping-info .qr-code{
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+        }
+        .shipping-info .margin-top{
+            margin-top: 24px;
+        }
+        .shipping-info .border-bottom{
+            border-bottom: 1px solid #333;
+        }
+        .shipping-info .cell-border{
+            border: 1px solid #333;
+        }
+        .shipping-info .shipping-info-wrap{
+            position: relative;
+            width: 794px; height: 1123px; 
+            /* background: #f7f7f7; */
+             padding: 84px;
+        }
+        .shipping-info .footer .border-bottom{
+            position: absolute;
+            bottom: 156px;
+            width: 794px;
+        }
+        .shipping-info .footer .left{
+            position: absolute;
+            bottom: 106px;
+            left: 84px;
+        }
+        .shipping-info .footer .right{
+            position: absolute;
+            bottom: 84px;
+            right: 84px;
+        }
+    </style>
+
+    <div class="table-responsive shipping-info">
+        <div class="shipping-info-wrap" >
+
+            <div style="display: flex; justify-content: space-between;">
+                <div><img src="img/logo.png" alt="" style="width: auto; height: 40px; object-fit: cover; margin-top: -26px;"></div>
+                <p class="text-bold">BIN: 002895665541254</p>
+                
+            </div>
+            <hr>
+
+            <div style="display:flex; justify-content: space-between; margin-top: 64px;">
+                <table class="table " style="width: 40%;">
+                    <thead>
+                        <tr class=" ">
+                            <th colspan="2" class="text-bold text-center">Shipping Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text">Name</td>
+                            <td class="text">Shawon Islam</td>
+                        </tr>
+                        <tr>
+                            <td class="text">Mobile No</td>
+                            <td class="text">01711 000 000</td>
+                        </tr>
+                        <tr>
+                            <td class="text">Adress</td>
+                            <td class="text">Rampura, Dhaka, Bangladesh</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+
+                <table class="table " style="width: 40%;">
+                    <thead>
+                        <tr class=" ">
+                            <th colspan="2" class="text-bold text-center text-capitalize">Order # BX5201452632541</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text">Order Date</td>
+                            <td class="text">11/12/2024 &ensp; 11:00 PM</td>
+                        </tr>
+                        <tr class=" ">
+                            <th colspan="2" class="text-bold text-center text-capitalize">Billing Info</th>
+                        </tr>
+                        <tr>
+                            <td class="text">Payment Method</td>
+                            <td class="text">Cash on Delivery</td>
+                        </tr>
+                        <tr>
+                            <td class="text">Payment Status</td>
+                            <td class="text">Pending</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-bold margin-top">Products</p>
+
+            <table class="table margin-top">
+                <thead>
+                    <tr class=" ">
+                        <th class="text-bold bg-light text-center">Name</th>
+                        <th class="text-bold bg-light text-center">Warranty</th>
+                        <th class="text-bold bg-light text-center">Price</th>
+                        <th class="text-bold bg-light text-center">Qty</th>
+                        <th class="text-bold bg-light text-center">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text ">Samsung Gallaxy A52</td>
+                        <td class="text text-center">1 Year</td>
+                        <td class="text text-center">BDT 36,000</td>
+                        <td class="text text-center">1</td>
+                        <td class="text text-end">36,000</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4" class="text-bold text-end">Discount In Products:</td>
+                        <td class="text-bold text-end text-danger">- BDT 1000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-bold text-end">Sub Total:</td>
+                        <td class="text-bold text-end "> BDT 35,000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-bold text-end">Shipping:</td>
+                        <td class="text-bold text-end "> BDT 60</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-bold text-end">Order Total:</td>
+                        <td class="text-bold text-end "> BDT 35,060</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-bold text-end">Total Payments:</td>
+                        <td class="text-bold text-end "> BDT 0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-bold text-end">Due:</td>
+                        <td class="text-bold text-end "> BDT 35,060</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+
+            <p class="text margin-top">Vat & Tax are included on MRP.</p>
+
+            
+
+            
+            <div class="margin-top footer">
+                <div class="border-bottom"></div>
+                <div class="left">
+                    <p class="text text-bold">Alexa Limited</p>
+                    <p class="text text-bold">90 Kakrail, Musafir tower, Dhaka 1200</p>
+                </div>
+                <div class="right">
+                    <p class="text text-bold"><span style="width: 50px; display: inline-block;">Cell </span>: +880 01711 000 000</p>
+                    <p class="text text-bold"><span style="width: 50px; display: inline-block;">Email</span>: hello@gmail.com</p>
+                    <p class="text text-bold"><span style="width: 50px; display: inline-block;">Web </span>: www.alexa.com</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
